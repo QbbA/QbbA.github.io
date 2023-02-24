@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    
+}
+.Frame {
+  width: 100%;
+  height: 100%;
+    
+}
+.hold {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.Main-Page {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top:130px;
+    width: 1024px;
+    height: 768px;
+    background-color: #8c8c8c;
+    border-radius: 15px;
+    
+}
+
+.footer {
+    width: 1024px;
+    height: 43px;
+    background-color: #DCDCDC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+}
+
+button {
+    border: 0px;
+    background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.right-side {
+    margin-right: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.Files {
+    width: 275px;
+    height: 262px;
+    display: flex;
+}
+
+i {
+    font-size: 46px;
+    color: #DCDCDC;
+    
+}
+
+.Games {
+    width: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute; left:722px; bottom: 331px;
+    gap:10px;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+
+.Memes {
+    width: min-content;
+    position: absolute; left:884px; bottom: 304px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.Calculator {
+    width: min-content;
+    position: absolute; left:854px; bottom: 151px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.CV {
+    width: min-content;
+    position: absolute; left:691px; bottom: 138px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+p1 {
+    padding: 5px;
+    background-color: #d9d9d9;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.cv {
+    width: 387px;
+    height: 482px;
+    background-color: #d9d9d9;
+    position: absolute; top: 146px; left: 86px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid 1px;
+    border-color: rgba(0, 0, 0, 0.7);
+}
+
+.HeaderCv {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 8px;
+    width: 387px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 3px 3px 1px rgb(185, 185, 185);
+}
+
+#CvBtn2, #MemeBtn2, #GBtn2, #GameBtn2, #RockBtn2, #TicBtn2, #SnakeBtn2, #CalBtn2, #AboutBtn2 {
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.CvText {
+    padding: 0px;
+}
+
+.CvImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 457px;
+}
+
+.cv-img {
+    width: 295px;
+    height: 417px;
+}
+
+.FilesFolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 172px;
+    height: 110px;
+    left: 60px;
+    bottom: 43px;
+    background-color: #d9d9d9;
+    border: 0.5px solid #000;
+    border-radius: 0px;
+}
+
+.File {
+    cursor: pointer;
+    color: black;
+    padding: 15px;
+}
+
+.HiddenFiles {
+    width: 172px;
+    height: 40px;
+    background-color: #d9d9d9;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.NEW {
+    width: 172px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.493);
+    margin-left: 13px;
+}
+
+.Open {
+    color: rgba(0, 0, 0, 0.493);
+    margin-left: 13px;
+}
+
+.MilliIdiea {
+    position: absolute;
+    left: 889px;
+    bottom: 626px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.error {
+    width: 387px;
+    height: 158px;
+    background-color: #d9d9d9;
+    position: absolute; top: 275px; left: 318px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid 1px;
+    border-color: rgba(0, 0, 0, 0.7);
+    z-index: 2
+}
+
+.headerError {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 8px;
+    width: 387px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 3px 3px 1px rgb(185, 185, 185);
+}
+
+.footerError {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute; top:67px; left: 85px;
+}
+
+#ErrorClose {
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.WindowsFolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 172px;
+    height: 110px;
+    left: 16px;
+    bottom: 43px;
+    background-color: #d9d9d9;
+    border: 0.5px solid #000;
+    
+
+}
+
+.About {
+   height: 36px;
+   width: 159px;
+   background-color: #d9d9d9;
+   color: black;
+   cursor: pointer;
+   padding-left: 13px;
+   display: flex;
+   align-items: center;
+}
+
+.Settings {
+   height: 36px;
+   width: 159px;
+   color: rgba(0, 0, 0, 0.493);
+   padding-left: 13px;
+   display: flex;
+   align-items: center;
+}
+
+.Profile {
+   height: 36px;
+   width: 159px;
+   color: rgba(0, 0, 0, 0.493);
+   padding-left: 13px;
+   display: flex;
+   align-items: center;
+
+}
+
+#Windows {
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+
+.EditFolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 172px;
+    height: 150px;
+    left: 138px;
+    bottom: 43px;
+    background-color: #d9d9d9;
+    border: 0.5px solid #000;
+
+}
+.Edit {
+    cursor: pointer;
+    color: black;
+    padding: 15px;
+}
+
+.Copy, .Paste, .Cut, .Undo {
+    width: 159px;
+    height: 30px;
+    padding-left: 13px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.493);
+
+}
+
+.Print {
+    width: 159px;
+    height: 30px;
+    padding-left: 13px;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
+
+.SocialFolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 172px;
+    height: 142px;
+    left: 215px;
+    bottom: 43px;
+    background-color: #d9d9d9;
+    border: 0.5px solid #000;
+
+}
+
+.Social {
+    cursor: pointer;
+     color: black;
+    padding: 15px;
+}
+
+.Facebook, .Instagram {
+    width: 159px;
+    height: 30px;
+    padding-left: 13px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.493);
+
+}
+
+.Github, .Linkedin {
+    width: 159px;
+    height: 30px;
+    padding-left: 13px;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
+
+.MFolder {
+    display: flex;
+    flex-direction: column;
+    width: 387px;
+    height: 287px;
+    background-color: #d9d9d9;
+    position: absolute; top: 146px; left: 86px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid 1px;
+    border-color: rgba(0, 0, 0, 0.7);
+}
+
+.HeaderMemes {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 8px;
+    width: 387px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 3px 3px 1px rgb(185, 185, 185);
+}
+
+.MemesIcons {
+    margin-top: 40px;
+    max-width: 387px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 5px;
+}
+
+.Meme, .Meme1, .Meme2, .Meme3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Gallery {
+    position: absolute;
+    width: 387px;
+    height: 367px;
+    left: 527px;
+    top: 171px;
+
+    background: #D9D9D9;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0px 0px 5px 5px;
+    z-index: 2
+}
+
+.HeaderSlider {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 8px;
+    width: 387px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 3px 3px 1px rgb(185, 185, 185);
+}
+
+.slider {
+    position: absolute;
+    top: 44px;
+    left: 46px;
+    width: 295px;
+    height: 296px;
+    
+}
+
+.mySlides {
+    display: none;
+    width: 295px;
+    height: 296px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #11d621;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #c90e0e;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+.GFolder {
+    display: flex;
+    flex-direction: column;
+    width: 387px;
+    height: 287px;
+    background-color: #d9d9d9;
+    position: absolute; top: 146px; left: 86px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid 1px;
+    border-color: rgba(0, 0, 0, 0.7);
+}
+
+.HeaderGames {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 8px;
+    width: 387px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 3px 3px 1px rgb(185, 185, 185);
+}
+
+.GamesIcons {
+    margin-top: 40px;
+    max-width: 387px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap:2;
+    margin-left: 20px;
+}
+
+.Game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    
+}
+
+.MilliIdiea {
+    position: absolute;
+    left: 889px;
+    bottom: 626px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.RockGame {
+    display: flex;
+    flex-direction: column;
+    width: 302px;
+    height: 287px;
+    background-color: #d9d9d9;
+    position: absolute; top: 278px; left: 523px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid 1px;
+    border-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+
+
+}
+
+.HeaderRock {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 8px;
+    width: 302px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 3px 3px 1px rgb(185, 185, 185);
+}
+
+.MainRock {
+    display: flex;
+    flex-direction: column;
+    height: 262px;
+    justify-content: space-evenly;
+}
+
+.RockBoard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.rGameText {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}  
+
+.ChoiceDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ChoiceBtn {
+    color: #000;
+}
+
+.TicContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 302px;
+    height: 400px;
+    background-color: #d9d9d9;
+    position: absolute; top: 278px; left: 523px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid 1px;
+    border-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.HeaderTic {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 8px;
+    width: 302px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 3px 3px 1px rgb(185, 185, 185);
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border:2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+
+#gameBoard {
+    
+    border: 3px solid;
+}
+
+.HeaderSnake {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 8px;
+    width: 402px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 3px 3px 1px rgb(185, 185, 185);
+}
+
+.snakeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 402px;
+    height: 400px;
+    background-color: #d9d9d9;
+    position: absolute; top: 278px; left: 323px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid 1px;
+    border-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    text-align: center;
+
+}
+
+.calApp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 172px;
+    height: 256px;
+    background-color: #d9d9d9;
+    position: absolute; top: 222px; left: 196px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid 1px;
+    border-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+
+}
+
+.HeaderCal {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 2px;
+    width: 172px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 3px 3px 1px rgb(185, 185, 185);
+}
+.calculatorTop {
+    width: 172px;
+    height: 231px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+    width: 122px;
+    height: 23px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 2px 2px 2px -1px rgb(0, 0, 0.25);
+
+}
+
+.previousNumber {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+.panel {
+    height: 160px;
+    width: 122px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.panel button {
+    font-size: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px -1px rgb(0, 0, 0.25);
+    cursor: pointer;
+}
+
+.equals {
+    grid-row: 6/4;
+    grid-column: -2/-1;
+}
+
+#Zero {
+    grid-row: 6/5;
+    grid-column: -5/-3;
+}
+
+.AbFolder {
+    width: 387px;
+    height: 482px;
+    background-color: #d9d9d9;
+    position: absolute; top: 146px; left: 86px;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid 1px;
+    border-color: rgba(0, 0, 0, 0.7);
+}
+
+.HeaderAbout {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 2px;
+    width: 387px;
+    height: 25px;
+    background-color: #d9d9d9;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 3px 3px 1px rgb(185, 185, 185);
+}
+
+.aboutText {
+    height: 447px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    background-color: transparent;
+
+}
+
+.aboutEssay {
+    width: 80%;
+    font-size: 10px;
+    height: 447px;
+    text-align: left;
+    line-height: 1.5;
+    background-color: transparent;
+}
+
+.logginPage {
+    position: relative; top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    background-color: #8c8c8c;
+    border-radius: 15px;
+    position: absolute;
+
+}
+.loginText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #141414;
+    border-radius: 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.rightL {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 80%;
+}
+
+.leftL {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 80%;
+    border-right: solid #1414149f 3px;
+}

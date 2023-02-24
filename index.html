@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website 2049</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="logginPage">
+        <div class="leftL">
+        <div class="loginText">
+            <h1>Welcome</h1>
+            <p>Click on the user to begin</p>
+        </div>
+        </div>
+        <div class="rightL">
+        <div class="user" id="user">
+            <div class="avater"><i class="fa-solid fa-user"></i></div>
+            <p>User</p>
+        </div>
+        </div>
+    </div>
+
+    
+    <div class="Frame" id="mainPage" style="display: none;">
+        <div class="hold">
+    <div class="Main-Page">
+
+        <div class="error" id="error" style="display: none; position: absolute;">
+            <div class="headerError">
+                <i class="fa fa-times" aria-hidden="true" id="ErrorClose" style="color: rgba(0, 0, 0, 0.918); font-size:18px;;"></i>
+                            <p1 style="padding: 0px; font-size: 18px; color: rgba(0, 0, 0, 0.76);">|</p1>
+                            <p1 class="CvText">Million dollar idea</p1>
+            </div>
+            <div class="footerError">
+                <p1>File corrupted!</p1>
+                <p1>Please try again.</p1>
+            </div>
+            
+        </div>
+
+        <div class ="calApp" id="calApp" style="display: none; position: absolute;">
+                <div class="HeaderCal">
+                    <i class="fa fa-times" aria-hidden="true" id="CalBtn2" style="color: rgba(0, 0, 0, 0.918); font-size:18px;;"></i>
+                    <p1 style="padding: 0px; font-size: 18px; color: rgba(0, 0, 0, 0.76);">|</p1>
+                    <p1 class="CalText">Calculator</p1>
+                </div>
+                <div class="calculatorTop">
+                    <div class="display">
+                        <div class="previousNumber">
+                            <p></p>
+                            <span class="mathSign"></span>
+                        </div>
+                        <p class="currentNumber"></p>
+                    </div>
+                    <div class="panel">
+                        <button class="clear">C</button>
+                        <button class="operator">=</button>
+                        <button class="operator">/</button>
+                        <button class="operator">*</button>
+                        <button class="number">7</button>
+                        <button class="number">8</button>
+                        <button class="number">9</button>
+                        <button class="operator">-</button>
+                        <button class="number">4</button>
+                        <button class="number">5</button>
+                        <button class="number">6</button>
+                        <button class="operator">+</button>
+                        <button class="number">1</button>
+                        <button class="number">2</button>
+                        <button class="number">3</button>
+                        <button class="equals">=</button>
+                        <button class="number" id="Zero">0</button>
+                        <button class="number">.</button>
+                    </div>
+                </div>          
+        </div>
+            <div class ="AbFolder" id="AbFolder" style="display: none; position: absolute;">
+                <div class="HeaderAbout">
+                    <i class="fa fa-times" aria-hidden="true" id="AboutBtn2" style="color: rgba(0, 0, 0, 0.918); font-size:18px;;"></i>
+                    <p1 style="padding: 0px; font-size: 18px; color: rgba(0, 0, 0, 0.76);">|</p1>
+                    <p1 class="AbText">About</p1>
+                </div>
+                <div class="aboutText">
+                    <p1 class="aboutEssay">As a beginner front-end developer, I present my portfolio website showcasing my projects. My name is Kuba and I'm passionate about creating visually appealing and functional websites. My portfolio website has a retro feel with a modern twist, designed for simplicity and showcasing my projects. One project I'm proud of is a calculator app created with JavaScript, HTML, and CSS. Another is a collection of games designed with user-friendliness and entertainment in mind, developed with JavaScript and visually appealing user interfaces. My portfolio showcases my skills, creativity and passion for designing functional websites. I am eager to learn and improve and hope you enjoy exploring my projects.</p1>
+                </div>
+
+            </div>
+        <div class ="cv" id="cv" style="display: none; position: absolute;">
+            <div class="HeaderCv">
+                <i class="fa fa-times" aria-hidden="true" id="CvBtn2" style="color: rgba(0, 0, 0, 0.918); font-size:18px;;"></i>
+                <p1 style="padding: 0px; font-size: 18px; color: rgba(0, 0, 0, 0.76);">|</p1>
+                <p1 class="CvText">CV.pdf</p1>
+            </div>
+            <div class="CvImage">
+                <img src="KubaKonowalskiResume.jpg" alt="CV.pdf" class="cv-img">
+            </div>
+        </div>
+        <div class="FFolder" id="FFolder" style="display: none;">
+            <div class="FilesFolder" id="FilesFolder">
+                <div class="HiddenFiles" id="HiddenFiles">Hidden Files</div>
+                <div class="Open">Open</div>
+                <div class="NEW">New</div>
+            </div>
+        </div>
+        <div class="WFolder" id="WFolder" style="display: none;">
+            <div class="WindowsFolder" id="WindowsFolder">
+                <div class="Profile">Profile</div>
+                <div class="Settings">Settings</div>
+                <div class="About" id="About">About</div>
+            </div>
+        </div>
+
+        
+
+        <div class="EFolder" id="EFolder" style="display: none;">
+            <div class="EditFolder" id="EditFolder">
+                <div class="Print" id="Print">Print</div>
+                <div class="Copy">Copy</div>
+                <div class="Paste">Paste</div>
+                <div class="Cut">Cut</div>
+                <div class="Undo">Undo</div>
+            </div>
+        </div>
+
+        <div class="SFolder" id="SFolder" style="display: none;">
+            <div class="SocialFolder" id="SocialFolder">
+                <a href="https://github.com/QbbA" target="_blank"><div class="Github" id="Github">Github</div></a>
+                <a href="https://www.linkedin.com/in/kuba-konowalski-b23a79205/" target="_blank"><div class="Linkedin" id="Linkedin">Linkedin</div></a>
+                <div class="Facebook">Facebook</div>
+                <div class="Instagram">Instagram</div>
+            </div>
+        </div>
+
+        <div class="MFolder" id="MFolder" style="display: none;">
+            <div class="HeaderMemes">
+                <i class="fa fa-times" aria-hidden="true" id="MemeBtn2" style="color: rgba(0, 0, 0, 0.918); font-size:18px;;"></i>
+                <p1 style="padding: 0px; font-size: 18px; color: rgba(0, 0, 0, 0.76);">|</p1>
+                <p1 class="MemesText">Memes</p1>
+            </div>
+            <div class="MemesIcons">
+                <div class="Meme" id="Meme">
+                    <i class="fas fa-image" style="color: black; cursor: pointer;"></i>                    
+                    <p1>Meme.pdf</p1>
+                    </div>
+                <div class="Meme1" id="Meme1">
+                    <i class="fas fa-image" style="color: black; cursor: pointer;"></i>
+                    <p1>Meme1.pdf</p1>
+                </div>
+                <div class="Meme2" id="Meme2">
+                    <i class="fas fa-image" style="color: black; cursor: pointer;"></i>
+                    <p1>Meme2.pdf</p1>
+                </div>
+                <div class="Meme3" id="Meme3">
+                    <i class="fas fa-image" style="color: black; cursor: pointer;"></i>
+                    <p1>Meme3.pdf</p1>
+                </div>
+            </div>
+        </div>
+
+        <div class="GFolder" id="GFolder" style="display: none;">
+            <div class="HeaderGames">
+                <i class="fa fa-times" aria-hidden="true" id="GameBtn2" style="color: rgba(0, 0, 0, 0.918); font-size:18px;;"></i>
+                <p1 style="padding: 0px; font-size: 18px; color: rgba(0, 0, 0, 0.76);">|</p1>
+                <p1 class="MemesText">Games</p1>
+            </div>
+            <div class="GamesIcons">
+                <div class="Game" id="Game">
+                    <i class="fa fa-gamepad" aria-hidden="true" style="color: black; cursor: pointer;"></i>                    
+                    <p1>Rock,Paper and Scissors</p1>
+                    </div>
+                <div class="Game" id="Game1">
+                    <i class="fa fa-gamepad" aria-hidden="true" style="color: black; cursor: pointer;"></i>
+                    <p1>Tic-Tac-Toe</p1>
+                </div>
+                <div class="Game" id="Game2">
+                    <i class="fa fa-gamepad" aria-hidden="true" style="color: black; cursor: pointer;"></i>
+                    <p1>Snake</p1>
+                </div>
+            </div>
+        </div>
+
+        <div class="RockGame" id="RockGame" style="display: none;">
+            <div class="HeaderRock">
+                <i class="fa fa-times" aria-hidden="true" id="RockBtn2" style="color: rgba(0, 0, 0, 0.918); font-size:18px;;"></i>
+                <p1 style="padding: 0px; font-size: 18px; color: rgba(0, 0, 0, 0.76);">|</p1>
+                <p1 class="RockText">Rock Paper Scissors</p1>
+            </div>
+            <div class="MainRock">
+                <h1 class="rGameText" id="resultText" >Start game</h1>
+                <div class="RockBoard" id="RockBoard">                     
+                     <div class="playerChoice" id="playerText"></div>
+                     <div class="slash" id="slash">:</div>
+                     <div class="computerChoice" id="computerText"></div>   
+                </div>
+                <p1>Choose one</p1>
+                    <div class="ChoiceDiv">
+                        <button class="choiceBtn" style="cursor: pointer;">Rock</button>
+                        <button class="choiceBtn" style="cursor: pointer;">Paper</button>
+                        <button class="choiceBtn" style="cursor: pointer;">Scissors</button>
+                    </div> 
+                       
+            </div>
+        </div>
+        <div class="snakeContainer" id="snakeGame" style="display: none;">
+            <div class="HeaderSnake">
+                <i class="fa fa-times" aria-hidden="true" id="SnakeBtn2" style="color: rgba(0, 0, 0, 0.918); font-size:18px;;"></i>
+                <p1 style="padding: 0px; font-size: 18px; color: rgba(0, 0, 0, 0.76);">|</p1>
+                <p1 class="SnakeText">Snake</p1>
+            </div>
+            <div class="fSnake">
+            <canvas id="gameBoard" width="300" height="300" style="margin-top: 5px;"></canvas>
+            <div id="scoreText" style="font-size: 30px; margin: 5px;">0</div>
+            <button id="resetSnakeBtn" style="cursor: pointer;" >Reset</button>
+            </div>
+        </div>    
+
+
+        <div class="TicContainer" id="TicGame" style="display: none;">
+            <div class="HeaderTic">
+                <i class="fa fa-times" aria-hidden="true" id="TicBtn2" style="color: rgba(0, 0, 0, 0.918); font-size:18px;;"></i>
+                <p1 style="padding: 0px; font-size: 18px; color: rgba(0, 0, 0, 0.76);">|</p1>
+                <p1 class="TicText">Tic-Tac-Toe</p1>
+            </div>
+            <div class="footerTic">
+            <div id="cellContainer">
+                <div cellIndex="0" class="cell"></div>
+                <div cellIndex="1" class="cell"></div>
+                <div cellIndex="2" class="cell"></div>
+                <div cellIndex="3" class="cell"></div>
+                <div cellIndex="4" class="cell"></div>
+                <div cellIndex="5" class="cell"></div>
+                <div cellIndex="6" class="cell"></div>
+                <div cellIndex="7" class="cell"></div>
+                <div cellIndex="8" class="cell"></div>
+            </div>
+            <h2 id="statusText" style="text-align: center;"></h2>
+            <button id="restartBtn" style="cursor: pointer;">Restart</button>
+            </div>
+        </div>
+
+        <div class="Gallery" id="Gallery" style="display: none;">
+            <div class="HeaderSlider">
+                <i class="fa fa-times" aria-hidden="true" id="GBtn2" style="color: rgba(0, 0, 0, 0.918); font-size:18px;;"></i>
+                <p1 style="padding: 0px; font-size: 18px; color: rgba(0, 0, 0, 0.76);">|</p1>
+                <p1 class="MemesText">Gallery</p1>
+            </div>
+            <div class="slider">
+                <div class="mySlides fade" id="Image1">
+                    <img src="Image1.png" style="width:100%; height:100%;">
+                  </div>
+
+                  <div class="mySlides fade" id="Image2">
+                    <img src="Image2.webp" style="width:100%; height:100%;">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <img src="Image3.jpg" style="width:100%; height:100%;">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <img src="Image4.png" style="width:100%; height:100%;">
+                  </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+        </div>
+
+            <div class="Games" id="GameBtn">
+                <i class="fa fa-folder" aria-hidden="true"></i>
+                <p1>Games</p1>
+            </div>
+            <div class="Memes" id="MemeBtn1">
+                <i class="fa fa-folder" aria-hidden="true"></i>
+                <p1>Memes</p1>
+            </div>
+            <div class="CV" id="CvBtn">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                <p1>CV.pdf</p1>
+            </div>
+            <div class="Calculator" id="CalBtn">
+                <i class="fa fa-calculator" aria-hidden="true"></i>
+                <p1>Calculator</p1>
+            </div>
+            <div id="MiliIcon" style="display: none;">  
+            <div class="MilliIdiea">
+                <i class="fa fa-folder" aria-hidden="true"></i>
+                <p1>Million dollar idea</p1>
+            </div>    
+            </div>  
+        <div class="footer">
+            <div class="left-side">
+                <div id="Windows" style="color: black; background-color: #d9d9d9;"><i class="fab fa-windows" style="color: black; background-color: #d9d9d9; font-size: 30px;"></i></div>
+                <div class="File" id="Files" style="color: black; background-color: #d9d9d9;">File</div>
+                <div class="Edit" id="Edit" style="color: black; background-color: #d9d9d9;">Edit</div>
+                <div class="Social" id="Social" style="color: black; background-color: #d9d9d9;">Social</div>
+            </div>
+            <div class="right-side">
+                <div class="clock" id="clock"></div>
+                <div class="div" id="date"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>  
+    <script src="clock.js"></script>   
+    <script src="gallery.js"></script>
+    <script src="Rock.js"></script>
+    <script src="tic-tac-toe.js"></script>
+    <script src="snake.js"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>
